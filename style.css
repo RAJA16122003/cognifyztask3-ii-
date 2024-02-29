@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    overflow: hidden;
+    background-image: url("images/jj.jpg");
+}
+.container{
+    width: 60vmin;
+    height: 100vmin;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    border: 8px solid white;
+    border-radius: 16px;
+    box-shadow: 10px 25px 30px rgba(30,30,200,0.3);
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+    
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    14.29%{
+        transform: translateX(0); 
+    }
+    28.57%{
+        transform: translateX(-100%);
+    }
+    42.86%{
+        transform: translateX(-200%);
+    }
+    57.14%{
+        transform: translateX(-300%);
+    }
+    71.43%{
+        transform: translateX(-400%);
+    }
+    85.71%{
+        transform: translateX(-500%);
+    }
+    100%{
+        transform: translateX(-600%);
+    }
+}
+img{
+    width: 100%;
+    
+}
